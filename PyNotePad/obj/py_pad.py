@@ -28,9 +28,9 @@ class PyPad():
 	def edit_note(self, old_title: str, new_note: dict):
 		for index, note in enumerate(self.all_notes):
 			if note.get("title") == old_title:
-			    print("Found the element to edit at index : ", index)
-			    self.all_notes[index] = new_note
-			    break
+				print("Found the element to edit at index : ", index)
+				self.all_notes[index] = new_note
+				break
 
 
 def initialization():

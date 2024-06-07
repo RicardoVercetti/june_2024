@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "demo-project"
+version = "0.1.0"
+description = ""
+authors = ["Ricardo <ricardobieb01@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+beautifulsoup4 = "<4.10"
+mysqlclient = {version = "^2.2.4", optional = true}
+psycopg2-binary = {version = "^2.9.9", optional = true}
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+mypy = "^1.10.0"
+pylint = "^3.2.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+faker = "^25.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
