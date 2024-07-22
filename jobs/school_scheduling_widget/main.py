@@ -77,6 +77,9 @@ def all_students_per_subject(stu_arr: list[Student]):
 
 	return collection
 
+def possible_class_arrangements(all_classes: list[str]) -> list[str]:
+	pass
+
 
 def run():
 	# s1 = Student("Alan", 1)
@@ -87,20 +90,20 @@ def run():
 	# print(sample)
 
 	# create students
-	# li = create_students(100)
+	li = create_students(50)
 	# for i in li:
 	# 	print(i)
 	# 	print("**"*24)
 
-	# collection = all_students_per_subject(li)
-	# print(collection)
-	# classes = divide_classes(collection, 60)
+	collection = all_students_per_subject(li)
+	print(collection)
+	classes = divide_classes(collection, 20)
 	# print(classes)
 
 	# create teachers
-	teachers = create_teachers(6)
-	for t in teachers:
-		print(t)
+	# teachers = create_teachers(6)
+	# for t in teachers:
+	# 	print(t)
 
 
 
